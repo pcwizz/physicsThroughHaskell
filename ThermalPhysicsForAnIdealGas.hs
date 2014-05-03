@@ -15,8 +15,8 @@ module ThermalPhysicsForAnIdealGas where
 	keneticEFromMassAndc m c = (1/2)*m*(c_rms c)^2 -- E_k=1/2mc^2 lame Newtonian mechanics
 	keneticEFromTempreture :: Double -> Double -> Double
 	keneticEFromTempreture t k = (3/2)*k*t -- E_k=3/2kT
-	molesFromDouble  :: Double -> Double
-	molesFromDouble n = n / avogadro -- get moles from the number of particles
+	molesFromNumber  :: Double -> Double
+	molesFromNumber n = n / avogadro -- get moles from the number of particles
 	molarMassFromMass  :: Double -> Double
 	molarMassFromMass m = m / avogadro -- Get molar mass from the mass
 	numberFromMoles  :: Double -> Double
